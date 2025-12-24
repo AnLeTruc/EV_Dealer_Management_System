@@ -1,5 +1,9 @@
 {
   "name": "ev_dealer-_management_system",
+  "private": true,
+  "workspaces": [   
+    "apps/*"
+  ],
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
