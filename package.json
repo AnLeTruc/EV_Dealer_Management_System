@@ -1,7 +1,7 @@
 {
   "name": "ev_dealer-_management_system",
   "private": true,
-  "workspaces": [   
+  "workspaces": [
     "apps/*"
   ],
   "version": "1.0.0",
@@ -14,5 +14,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
 }
