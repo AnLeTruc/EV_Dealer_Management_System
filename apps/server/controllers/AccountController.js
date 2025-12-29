@@ -5,7 +5,7 @@ const {v4 : uuidv4} = require('uuid'); // Generating unique IDs if needed
 
 const { generatePassword } = require('../utils/credential');
 const { generateUniqueUsername } = require('../services/accountCredentials');
-const { signAccessToken, signRefreshToken} = require('../middlewares/jwt');
+const { signAccessToken, signRefreshToken, verifyRefreshToken} = require('../middlewares/jwt');
 
 // Create new account
 exports.createAccount = async (req, res) => {
@@ -145,6 +145,7 @@ exports.login = async (req, res) => {
     }
 };
 
+// Refresh token
 exports.refreshToken = async (req, res) => {
     try{
         //Get refresh token from cookies
